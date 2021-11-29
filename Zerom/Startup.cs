@@ -27,6 +27,9 @@ namespace Zerom
                 app.UseDeveloperExceptionPage();
             }
 
+            // 추가적인 확장 메소드를 미들웨어라고 한다.
+            app.UseStaticFiles(); //wwwroot폴더를 만들고 정적인 HTML, CSS, JavaScript, Image ...등 실행시 사용
+            
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
